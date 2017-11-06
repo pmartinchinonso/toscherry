@@ -151,7 +151,7 @@
                             <tr>
                                 <td><?php echo $comp_id[$x] ?></td>
                                 <td><?php echo $comp_name[$x] ?></td>
-                                <td><a href="update_data.php?id=<?php echo $comp_id[$x] ?>">Edit</a></td>
+                                <td><a href="update_computer.php?id=<?php echo $comp_id[$x] ?>">Edit</a></td>
                                 <td><a href="view_database.php?iddel=<?php echo $comp_id[$x] ?>">Delete</a></td>
                                 <td><a href="../view_computer_detail.php?id=<?php echo $comp_id[$x] ?>">View</a></td>
                             </tr>
@@ -177,7 +177,7 @@
                             <tr>
                                 <td><?php echo $print_id[$x] ?></td>
                                 <td><?php echo $print_name[$x] ?></td>
-                                <td><a href="update_data.php?id=<?php echo $print_id[$x] ?>">Edit</a></td>
+                                <td><a href="update_printer.php?id=<?php echo $print_id[$x] ?>">Edit</a></td>
                                 <td><a href="view_database.php?printdel=<?php echo $print_id[$x] ?>">Delete</a></td>
                                 
                             </tr>
