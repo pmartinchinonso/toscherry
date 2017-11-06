@@ -20,7 +20,7 @@
             <ul class="navi-menu">
               <li class="<?php echo $home_active;?>"><a href="../index.php">Home</a></li>
               <li class="<?php echo $about_active;?>"><a href="#about">About Us</a></li>
-              <li class="<?php echo $team_active;?>"><a href="#team">Team</a></li>
+              <li class="<?php echo $team_active;?>"><a href="view_database.php">View Database</a></li>
               <li class="menu-has-children <?php echo $products_active;?>"><a href="">Products &#x25BE;</a>
                 <ul>
                   <li><a href="../computers.php">Computers</a></li>

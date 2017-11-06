@@ -38,21 +38,13 @@ jQuery(document).ready(function( $ ) {
 	
 	//toggle the mobile nav
 	$(function(){
-		/*var marg = $(".main_body").css.margin();*/
 		$(".open_button").click(function(){
 			$(".side_nav").css({right: "0"});
 			$(".overlay").css({left: "0"});
-			/*$(".main_body").css({marginLeft: "45%"});*/
 		});
-		$(".close_button").click(function(){
+		$(".close_button, .overlay").click(function(){
 			$(".side_nav").css({right: "-45%"});
 			$(".overlay").css({left: "100%"});
-			/*$(".main_body").css({marginLeft: "0"});*/
-		});
-		$(".overlay").click(function(){
-			$(".overlay").css({left: "100%"});
-			$(".side_nav").css({right: "-45%"});
-			/*$(".main_body").css({marginLeft: "0"});*/
 		});
 	});
 	
@@ -120,7 +112,7 @@ jQuery(document).ready(function( $ ) {
 	
 	
 	//initializes the richtext editor
-	$('.content').richText();
+	//$('.content').richText();
 
 		
 });

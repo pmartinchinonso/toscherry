@@ -104,7 +104,7 @@ jQuery(document).ready(function( $ ) {
 	
 	
 	
-	$('.content').richText();
+	
 	
 	/*$('.content').richText({
   // text formatting

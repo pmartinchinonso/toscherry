@@ -142,7 +142,7 @@
                           </div>
                         </div>
                         <div class="row">
-                        	<textarea class="content" name="desc_computer" required></textarea>
+                        	<textarea class="content" name="desc_computer" placeholder="Description" required></textarea>
                         </div>
                         <div class="row">
                           <button class="btn waves-effect waves-light btn-flat" id="computer_btn" type="submit" name="submit_computer">Submit Computer
@@ -280,7 +280,9 @@
 	<!--Js include-->
 	<?php include('toscherry_js_lib.php'); ?>
 	<script type="text/javascript" src="js/jquery.richtext.min.js"></script>
-    <script src="js/upload_script.js"></script>
+    <script type="text/javascript">
+    	$('.content').richText();
+    </script>
     
 </body>
 </html>
