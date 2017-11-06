@@ -93,7 +93,7 @@
                           </button></a>
                         </div>
                         <div id="feedback">
-                        	<?php if(isset($feedback)) echo $feedback;?>
+                        	<?php if(isset($feedback)) echo $feedback?>
                         </div>
                     </form>
                     </div> 
