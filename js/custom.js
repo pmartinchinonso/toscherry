@@ -91,104 +91,50 @@ jQuery(document).ready(function( $ ) {
 		  $('.back-to-top').fadeIn('slow');
 	  } else {
 		  $('.back-to-top').fadeOut('slow');
-	  }
-	  
+	  }  
 	});
 	$('.back-to-top').click(function(){
       $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
       return false;
     });
 	
-	
-	
-	
-	
-	
-	
-	
-	/*$('.content').richText({
-  // text formatting
-  bold: true,
+	/*Subscribe function */
+	$('#subscribe_form').on('submit', function(){
+		var email = $('#subscribe_email').val();
+		$.post('data_process.php', { email_sub: email}, function(success){
+			$('#success_message').html(success);
+		});
+		$(this).find("input").val("");
+		return false;
+	});
 
-  italic: true,
+	/*Footer message function */
+	$('#footer_message_form').on('submit', function(){
+		var name = $('#message_name').val();
+		var email = $('#message_email').val();
+		var message = $('#message_textarea').val();
+		$.post('data_process.php', {message_name:name, email:email, message:message}, function(success){
+			
+			$('#success_email_message').html(success);
+		});
 
-  underline: true,
+		$(this).find("input, textarea").val("");
+		return false;
+	});
 
- 
+	/*Contact function */
+	$('#contact_form').on('submit', function(){
+		var name = $('#first_name').val();
+		var email = $('#contact_email').val();
+		var subject = $('#contact_subject').val();
+		var message = $('#contact_message').val();
+		$.post('data_process.php', {contact_name:name, email:email, message:message, subject: subject}, function(success){
+			
+			$('#success_contact_message').html(success);
+		});
 
-  leftAlign: true,
-
-  centerAlign: true,
-
-  rightAlign: true,
-
- 
-
-  // lists
-
-  ol: true,
-
-  ul: true,
-
-  // title
-
-  heading: true,
-
-  // colors
-
-  fontColor: false,
-
- 
-
-  // uploads
-
-  imageUpload: true,
-
-  fileUpload: true,
-
- 
-
-  // link
-
-  urls: true,
-
-
-  table: true,
-
-  removeStyles: true,
-
-  code: true,
-
-  colors: [],
-
-  fileHTML: '',
-
-  imageHTML: ''
-
-});*/
-
+		$(this).find("input, textarea").val("");
+		return false;
+	});
 		
 });
-
-/*$(window).on('load', function() {
-    $('#preloader').delay(100).fadeOut('slow',function(){$(this).remove();});
-	$('body').delay(3000).addClass('loaded');
-  });*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-jQuery(document).ready(function( $ ){
-       
-
-    });

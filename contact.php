@@ -41,7 +41,7 @@
             	<h3 class="section_title">Write us</h3>
                 <div class="section_title_divider"></div>
                 
-                <form class="col s12">
+                <form class="col s12" id="contact_form" method="post">
                 	<div class="row">
                     	<div class="input-field col s12 m6 l6">
                           <i class="material-icons prefix">person</i>
@@ -52,21 +52,21 @@
                   
                     	<div class="input-field col s12 m6 l6">
                           <i class="material-icons prefix">email</i>
-                          <input id="email" type="email" class="validate" required>
+                          <input id="contact_email" type="email" class="validate" required>
                           <label for="email" data-error="wrong" data-success="right">Email</label>
                     	</div>
                   </div>
                   <div class="row">
                     	<div class="input-field col s12 ">
                           <i class="material-icons prefix">subject</i>
-                          <input id="email" type="text" class="validate" required>
+                          <input id="contact_subject" type="text" class="validate" required>
                           <label for="email" data-error="wrong" data-success="right">Subject</label>
                     	</div>
                   </div>
                   <div class="row">
                     <div class="input-field col s12 ">
                     	<i class="material-icons prefix">message</i>
-                      <textarea id="textarea1" class="materialize-textarea" required></textarea>
+                      <textarea id="contact_message" class="materialize-textarea" required></textarea>
                       <label for="textarea1">Your Message</label>
                     </div>
                   </div>
@@ -75,6 +75,7 @@
                       <button class="btn waves-effect waves-light btn-flat" type="submit" name="action">Send
                         <i class="material-icons right">send</i>
                       </button>
+                      <p id='success_contact_message'></p>
                   </div>
                 </form>
             </div>

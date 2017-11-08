@@ -258,14 +258,7 @@
     <!--==========================
       Subscribe Section
     ============================-->
-    <?php
-    	if(isset($_POST['email'])){
-			$email = $_POST['email'];
-			
-			$insert = mysqli_query($connect, "insert into subscribers values('', '$email')");
-			if($insert){ $feedback = "Subscription successful";} else{ $feedback = "Couldn\'t upload".mysqli_error();}
-		}
-	?>
+    
     <section id="subscribe">
     	<div class="container wow fadeInUp">
         	<div class="row">
@@ -275,22 +268,20 @@
                 </div>
                 
                 <div class="col s12 m12 l5 wow fadeInRight">
-                    <form class="col s12" method="post">
+                    <form class="col s12" id="subscribe_form" method="post">
                       <div class="row">
                         <div class="input-field">
                         	<i class="material-icons prefix">email</i>
-                          <input id="email" type="email" class="validate" name="email">
+                          <input id="subscribe_email" type="email" class="validate" name="email" required>
                           <label for="email" data-error="wrong" data-success="right">Email</label>
                         </div>
                       </div>
                       
                       <div class="row">
-                      	  <button class="btn waves-effect waves-light btn-flat" type="submit" name="submit_email">Sign up
+                      	  <button class="btn waves-effect waves-light btn-flat" type="submit" id="submit_email" >Sign up
                             <i class="material-icons right">send</i>
                           </button>
-                          <p>
-                          	<?php if(isset($feedback))echo $feedback;?>
-                          </p>
+                          <p id='success_message'></p>
                       </div>
                     </form>	
                 </div>

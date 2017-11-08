@@ -11,7 +11,7 @@
 		echo "Error creating database: ".mysqli_error($connect);
 	}
 	
-	
+
 ?>
 <!doctype html>
 <html>
