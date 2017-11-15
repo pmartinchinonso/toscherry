@@ -25,6 +25,7 @@
 
 		//mail($to, $subject, $msg, $headers);
 		//mail($email, $subject2, $msg2, $headers2);
+		$insert = mysqli_query($connect, "insert into subscribers values('', '$email')");
 		
 		echo "Mail sent! Thank you ".$name.", We will contact you shortly";
 	}
@@ -47,7 +48,32 @@
 
 		//mail($to, $subject, $msg, $headers);
 		//mail($email, $subject2, $msg2, $headers2);
+		$insert = mysqli_query($connect, "insert into subscribers values('', '$email')");
 		
 		echo "Mail sent! Thank you ".$name.", We will contact you shortly";
+	}
+
+	if(isset($_POST['sub_message'])){
+		$message = $_POST['sub_message'];
+		$subj = $_POST['subject'];
+
+		$select = mysqli_query($connect, "Select * from subscribers");
+		if(mysqli_num_rows($select)){
+			while($row = mysqli_fetch_assoc($select)){
+				$email[] = $row['email'];
+			}
+		}
+		else{echo "Could not fetch data from database".mysqli_error($connect);}
+
+		// In case any of our lines are larger than 70 characters, we should use wordwrap()
+		$message = wordwrap($message, 70, "\r\n");
+		$to = implode(", ", $email);
+		$subject = "Message from www.toscherry.com \n".$subj;
+
+		//mail($to, $subject, $message);
+
+		
+		
+		echo "Mail sent to the subscribers";
 	}
 ?>
