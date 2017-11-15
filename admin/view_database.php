@@ -178,7 +178,7 @@
                                 <td><?php echo $print_id[$x] ?></td>
                                 <td><?php echo $print_name[$x] ?></td>
                                 <td><a href="update_printer.php?id=<?php echo $print_id[$x] ?>">Edit</a></td>
-                                <td><a href="view_database.php?printdel=<?php echo $print_id[$x] ?>">Delete</a></td>
+                                <td><a id="del-btn" href="view_database.php?printdel=<?php echo $print_id[$x] ?>">Delete</a></td>
                                 
                             </tr>
                             <?php }?>
@@ -220,7 +220,7 @@
                     	<table class="wow zoomIn striped" width="800" align="center" border="1">
                             <thead><tr>
                                 <th>ID</th>
-                                <th>Gadget Name</th>
+                                <th>Accessory Name</th>
                                 <th>&nbsp;</th>
                                 <th>&nbsp;</th>
                                 
@@ -261,7 +261,16 @@
 
 	<!--Js include-->
 	<?php include('toscherry_js_lib.php'); ?>
-    
+    <script type="text/javascript">
+        //Delete button confirmation
+        $('#del-btn').click(function(){
+            if(confirm("Are you sure you want to delete this item?")){
+                return true;
+            }else{
+                return false;
+            }
+        });
+    </script>
 </body>
 </html>
 
