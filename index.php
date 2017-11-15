@@ -53,9 +53,9 @@
             </div>
             
             <h1>Welcome to <span class="tos">Toscherry Ltd, Toscherry Ltd</span></h1>
-            <h2>Home of <span class="rotating">original computers and printers, exotic outdoor plastics, advanced security gadgets</span></h2>
+            <h2>Home of <span class="rotating">original computers and printers, exotic outdoor plastics, luxurious Bathroom accessories</span></h2>
             <div class="actions">
-              <a href="#latest_computers" class="btn-get-started wow zoomInLeft pulse" data-wow-duration="1s" data-wow-delay="2s">Get Started</a>
+              <a href="#we_offer" class="btn-get-started wow zoomInLeft pulse" data-wow-duration="1s" data-wow-delay="2s">Navigate Products</a>
               <a href="#subscribe" class="btn-services wow zoomInRight" data-wow-duration="1s" data-wow-delay="2s">Subscribe</a>
             </div>
           </div>
@@ -123,8 +123,8 @@
                 
                 <div class="we_offer_items_container col xl3 l4  m6 s12 wow fadeInUp" data-wow-delay="1s">
                 	<div class="we_offer_items  z-depth-1-half">
-                    	<div><img class="materialboxed img_container" data-caption="CCTV camera" src="img/cctv3.jpg" width="90%" height="100%"></div>
-                        <h5>Advanced security gadgets</h5>
+                    	<div><img class="materialboxed img_container" data-caption="Bathroom sink" src="img/sink.jpg" width="90%" height="100%"></div>
+                        <h5>Bathroom Solutions</h5>
                         <p class="we_offer_details">
                         	We have original durable laptops of different brands, specifications, sizes and classes. 
                             It comes with a guarranty. Click the button below to see more of what 
@@ -201,6 +201,7 @@
                 </div>
                 
             </div>
+            <a href="computers.php" class="see_more_btn wow flash pulse" data-wow-iteration="infinite" data-wow-duration="1s">See more</a>
         </div>
     </section>
     
@@ -250,7 +251,58 @@
                 </div>
                 
             </div>
+            <a href="printers.php" class="see_more_btn wow flash pulse" data-wow-iteration="infinite" data-wow-duration="1s">See more</a>
             
+        </div>
+    </section>
+
+    <section id="latest_plastics">
+        <div class="container wow fadeInUp">
+            <div class="row">
+                <div class="col s12">
+                    <h3 class="section_title">Exotic Outdoor Plastics</h3>
+                    <div class="section_title_divider"></div>
+                    <p class="section_desc">Below are the latest trending plastics</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="latest_items_container col l4 m6 s12 wow fadeInUp">
+                    <div class="latest_items  z-depth-1-half">
+                        <div class="img_container"><img class="materialboxed img_container" data-caption="Altak Ranoush" src="img/plastics/altak_ranoush.jpg" width="90%" height="100%"></div>
+                        <h5>Altak Ranoush</h5>
+                        <p class="latest_details">
+                            
+                        </p>
+                        
+                    </div>
+                </div>
+                
+                <div class="latest_items_container col l4 m6 s12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="latest_items  z-depth-1-half">
+                        <div class="img_container"><img class="materialboxed img_container" data-caption="Altak Student Table" src="img/plastics/altak_student_table.jpg" width="90%" height="100%"></div>
+                        <h5>Altak Student Table</h5>
+                        <p class="latest_details">
+                            
+                        </p>
+                        
+                    </div>
+                </div>
+                
+                <div class="latest_items_container col l4 m6 s12 wow fadeInUp" data-wow-delay="700ms">
+                    <div class="latest_items  z-depth-1-half">
+                        <div class="img_container"><img class="materialboxed img_container" data-caption="Lenovo Thinkpad X1 Yoga" src="img/plastics/eleganza_partytime.jpg" width="90%" height="100%"></div>
+                        <h5>Eleganza Party time</h5>
+                        <p class="latest_details">
+                            
+                        </p>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <a href="plastics.php" class="see_more_btn wow flash pulse " data-wow-iteration="infinite" data-wow-duration="1s">See more</a>
             
         </div>
     </section>
