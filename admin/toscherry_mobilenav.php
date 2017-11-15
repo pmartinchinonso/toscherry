@@ -7,10 +7,10 @@
         <div class="side_menu <?php echo $products_active;?>">
             <div id="side_item" class="<?php echo $products_active;?>">Products &#x25BE;</div>
             <div id="side_submenu">
-                <a href="computers.php">Computers</a>
-                <a href="#">Printers</a>
-                <a href="#">Exotic Plastics</a>
-                <a href="#">Security Gadgets</a>
+                <a href="../computers.php">Computers</a>
+                <a href="../printers.php">Printers</a>
+                <a href="../plastics.php">Exotic Plastics</a>
+                <a href="../bathroom.php">Bathroom Solutions</a>
             </div>
         </div>
         <a href="contact.php" class="<?php echo $contact_active;?>">Contact Us</a>
