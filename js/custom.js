@@ -136,5 +136,18 @@ jQuery(document).ready(function( $ ) {
 		$(this).find("input, textarea").val("");
 		return false;
 	});
+
+	/*Message subscribers function */
+	$('#msg_subscribers_form').on('submit', function(){
+		var subject = $('#msg_sub_subject').val();
+		var message = $('#msg_sub_message').val();
+		$.post('data_process.php', { sub_message:message, subject: subject}, function(success){
+			
+			$('#success_sub_message').html(success);
+		});
+
+		$(this).find("input, textarea").val("");
+		return false;
+	});
 		
 });
