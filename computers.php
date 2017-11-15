@@ -119,7 +119,7 @@
 							
 						?>
                         <p class="latest_details col s6 m12">
-                        	<?php //echo $desc[$x];
+                        	<?php 
 								// strip tags to avoid breaking any html strip_tags('string')
 								$string = $desc[$x];
 								
