@@ -7,7 +7,7 @@
 	$contact_active = "menu-active";
 	
 	//title page assignment
-	$page_title = "Computers";
+	$page_title = "Contact us";
 ?>
 <!doctype html>
 <html>
@@ -84,8 +84,9 @@
                 <div class="section_title_divider"></div>
             	Have any Queries? Let us know. We will clear it for you at the best.<br><br>
             	<p>
-                	<i class="material-icons prefix">location_on</i> 41 ziks Avenue Uwani Enugu<br><br>
-                    <i class="material-icons prefix">local_phone</i> 08030701890, 08151252410<br><br>
+                	<a href="#map"><i class="material-icons prefix">location_on</i> 41 ziks Avenue Uwani Enugu</a><br><br>
+                    <a href="tel:+2348030701890"><i class="material-icons prefix">local_phone</i> 08030701890,</a> <a href="tel:+2348151252410">08151252410</a>
+                    <br><br>
                     <i class="material-icons prefix">local_post_office</i> toscherry@hotmail.com<br><br>
                     <i class="material-icons prefix">local_post_office</i> toscherry@yahoo.com<br>
                 </p>
