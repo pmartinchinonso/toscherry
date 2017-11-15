@@ -39,8 +39,7 @@
 		$query5 = "create table if not exists gadgets(
 				id int primary key not null auto_increment,
 				name varchar(225) not null, 
-				image varchar(225) not null,
-				description text not null
+				image varchar(225) not null
 				)";
 		mysqli_query($connect,"$query5");
 				if($query5){ echo "successful.<br>";} else{ echo "could not create gadgets".mysqli_error();}
