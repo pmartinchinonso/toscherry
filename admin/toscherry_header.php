@@ -24,9 +24,9 @@
               <li class="menu-has-children <?php echo $products_active;?>"><a href="">Products &#x25BE;</a>
                 <ul>
                   <li><a href="../computers.php">Computers</a></li>
-                  <li><a href="#">Printers</a></li>
-                  <li><a href="#">Exotic Plastics</a></li>
-                  <li><a href="#">Security Gadgets</a></li>
+                  <li><a href="../printers.php">Printers</a></li>
+                  <li><a href="../plastics.php">Exotic Plastics</a></li>
+                  <li><a href="../bathroom.php">Bathroom Solutions</a></li>
                 </ul>
               </li>
               <li class="<?php echo $contact_active;?>"><a href="../contact.php">Contact Us</a></li>
