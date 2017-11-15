@@ -62,13 +62,12 @@
 	//submit gadgets
 	if(isset($_POST['submit_gadget'])){
 		$name = $_POST['name_gadget'];
-		$desc = $_POST['desc_gadget'];
 		$img = $_FILES['image_gadget']['name'];
 		$img_path = '../img/gadgets/'.$img;
 		move_uploaded_file($_FILES['image_gadget']['tmp_name'], $img_path);
 		
-		$insert = mysqli_query($connect, "insert into gadgets values('', '$name', '$img', '$desc')");
-			if($insert){ $feedback = "Gadget added succesfully";} else{ $feedback = "Couldn\'t upload".mysqli_error();}
+		$insert = mysqli_query($connect, "insert into gadgets values('', '$name', '$img')");
+			if($insert){ $feedback = "Accessory added succesfully";} else{ $feedback = "Couldn\'t upload".mysqli_error();}
 		$act_comp = '';
 		$act_print = '';
 		$act_plast = '';
@@ -117,7 +116,7 @@
                     <li class="tab col s3"><a class="<?php echo $act_comp;?>" href="#comp">Computers</a></li>
                     <li class="tab col s3"><a class="<?php echo $act_print;?>" href="#print">Printers</a></li>
                     <li class="tab col s3"><a class="<?php echo $act_plast;?>" href="#plastic">Plastics</a></li>
-                    <li class="tab col s3"><a class="<?php echo $act_gadg;?>" href="#gadget">Gadgets</a></li>
+                    <li class="tab col s3"><a class="<?php echo $act_gadg;?>" href="#gadget">Bathroom</a></li>
                   </ul>
                 </div>
                 <div id="comp" class="col s12">
@@ -245,12 +244,9 @@
                             <input class="file-path validate" type="text">
                           </div>
                         </div>
-                        <div class="row">
-                        	<textarea class="content" name="desc_gadget" required></textarea>
-                        </div>
                         
                         <div class="row">
-                          <button class="btn waves-effect waves-light btn-flat" type="submit" name="submit_gadget">Submit Gadget
+                          <button class="btn waves-effect waves-light btn-flat" type="submit" name="submit_gadget">Submit Accessory
                             <i class="material-icons right">keyboard_arrow_right</i>
                           </button>
                         </div>
@@ -265,6 +261,32 @@
             </div>
                 
                 
+        </div>
+        <div class="row"><br><br><br>
+          <form class="col s12 m6"  id="msg_subscribers_form" method="post">
+            <h4>Message your subscribers</h4>
+            <div class="row">
+                <div class="input-field col s12 ">
+                    <i class="material-icons prefix">subject</i>
+                    <input id="msg_sub_subject" type="text" class="validate" required>
+                    <label for="email" data-error="wrong" data-success="right">Subject</label>
+                </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12 ">
+                <i class="material-icons prefix">message</i>
+                <textarea id="msg_sub_message" class="materialize-textarea" required></textarea>
+                <label for="textarea1">Your Message</label>
+              </div>
+            </div>
+            
+            <div class="row">
+                <button class="btn waves-effect waves-light btn-flat" type="submit" name="action">Send
+                  <i class="material-icons right">send</i>
+                </button>
+                <p id='success_sub_message'></p>
+            </div>
+          </form>
         </div>
     </section>
     
@@ -282,6 +304,8 @@
 	<script type="text/javascript" src="js/jquery.richtext.min.js"></script>
     <script type="text/javascript">
     	$('.content').richText();
+
+      
     </script>
     
 </body>
