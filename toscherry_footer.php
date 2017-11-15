@@ -15,7 +15,8 @@
                 </p>
                 <p>
                 	<a href="contact.php"><i class="material-icons prefix">location_on</i> 41 ziks Avenue Uwani Enugu</a><br>
-                    <i class="material-icons prefix">local_phone</i> 08030701890, 08151252410<br>
+                    <a href="tel:+2348030701890"><i class="material-icons prefix">local_phone</i> 08030701890,</a> <a href="tel:+2348151252410">08151252410</a>
+                    <br>
                     <i class="material-icons prefix">local_post_office</i> toscherry@hotmail.com<br>
                     <i class="material-icons prefix">local_post_office</i> toscherry@yahoo.com<br>
                 </p>
@@ -51,6 +52,7 @@
                         <i class="material-icons right">send</i>
                       </button>
                       <p id='success_email_message'></p>
+                      <a href="tel:+2348030701890">Or Call us: <i class="material-icons prefix">local_phone</i></a>
                   </div>
                 </form>
               </div>
